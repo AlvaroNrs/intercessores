@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&display=swap');
 
 * {
   margin: 0;
@@ -13,7 +14,7 @@
   --marrom: #381d09ff;
 
   --fonte-principal: Piazzolla, 'sans serif';
-  --fonte-secundaria: Rubik Mono One, 'times new roman';
+  --fonte-secundaria: M PLUS Code Latin, 'times new roman';
 
   font-family: var(--fonte-principal);
 }

@@ -1,0 +1,25 @@
+header {
+    font-family: var(--fonte-secundaria);
+    background-color: var(--creme);
+    color: var(--preto);
+    text-align: center;
+    padding-top: 1rem;
+}
+
+nav {
+    text-align: center;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+a {
+    color: var(--preto);
+    text-decoration: none;
+}
+
+#logoImg {
+    max-width: 10rem;
+    padding-bottom: 0.5rem;
+}
