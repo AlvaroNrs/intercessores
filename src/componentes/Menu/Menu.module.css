@@ -1,7 +1,7 @@
 header {
     font-family: var(--fonte-secundaria);
-    background-color: var(--creme);
-    color: var(--preto);
+    background-color: var(--marrom);
+    color: var(--creme);
     text-align: center;
     padding-top: 1rem;
 }
@@ -19,7 +19,14 @@ a {
     text-decoration: none;
 }
 
+h1 {
+    color: var(--creme);
+}
+
+.btnMenuHamburguer {
+    border: 0px solid transparent;
+}
+
 #logoImg {
-    max-width: 10rem;
-    padding-bottom: 0.5rem;
+    max-width: 5rem;
 }

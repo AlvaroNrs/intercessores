@@ -3,6 +3,7 @@ import Inicio from "./paginas/Inicio";
 import Sobre from "./paginas/Sobre";
 import NaoEncontrada from "./paginas/NaoEncontrada";
 import Menu from "./componentes/Menu";
+import ComoJogar from "paginas/ComoJogar";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Inicio/>} />
         <Route path="/sobre" element={<Sobre/>} />
+        <Route path="/comoJogar" element={<ComoJogar/>} />
         <Route path="*" element={<NaoEncontrada/>} />
       </Routes>
     </BrowserRouter>
