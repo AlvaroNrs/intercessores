@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import logoJogoSimples from 'assets/Logo_Simples.png';
 import styles from "./Menu.module.css";
+import NavbarItem from "componentes/NavbarItem";
 import "./Menu.module.css";
 
 export default function Menu() {
@@ -19,15 +20,9 @@ export default function Menu() {
                     </div>
                     <div className="d-md-none collapse navbar-collapse styles.menuInterno" id="navbarTogglerDemo03">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li className="nav-item">
-                                <Link className="nav-link" aria-current="page" to="/">Home</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/comoJogar">Como Jogar</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/sobre">Sobre o criador</Link>
-                            </li>
+                            <NavbarItem className="nav-item" corFonte={"fc-creme"} titulo={"Home"} pagina={"/"}></NavbarItem>
+                            <NavbarItem className="nav-item" corFonte={"fc-creme"} titulo={"Como Jogar"} pagina={"/comoJogar"}></NavbarItem>
+                            <NavbarItem className="nav-item" corFonte={"fc-creme"} titulo={"Sobre o Desenvolvedor"} pagina={"/sobre"}></NavbarItem>
                         </ul>
                     </div>
                 </div>
