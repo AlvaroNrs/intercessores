@@ -21,5 +21,34 @@
 
 h1 {
   margin-bottom: 0;
+  font-size: 1.5rem;
+}
+
+.fc-creme {
+  color: var(--creme);
+}
+
+.fc-marrom {
+  color: var(--marrom);
+}
+
+.fc-laranja {
+  color: var(--laranja)
+}
+
+.bgc-laranja {
+  background-color: var(--laranja);
+}
+
+.bgc-creme {
+  background-color: var(--creme);
+}
+
+.bgc-marrom {
+  background-color: var(--marrom);
+}
+
+.bgc-preto {
+  background-color: var(--preto);
 }
 

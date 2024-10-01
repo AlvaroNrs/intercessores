@@ -3,6 +3,7 @@ import Inicio from "./paginas/Inicio";
 import Sobre from "./paginas/Sobre";
 import NaoEncontrada from "./paginas/NaoEncontrada";
 import Menu from "./componentes/Menu";
+import Footer from "./componentes/Footer";
 import ComoJogar from "paginas/ComoJogar";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/comoJogar" element={<ComoJogar/>} />
         <Route path="*" element={<NaoEncontrada/>} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

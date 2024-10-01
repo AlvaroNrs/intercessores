@@ -1,3 +1,5 @@
+@import url('../../index.css');
+
 header {
     font-family: var(--fonte-secundaria);
     background-color: var(--marrom);
@@ -15,7 +17,6 @@ nav {
 }
 
 a {
-    color: var(--preto);
     text-decoration: none;
 }
 
@@ -23,8 +24,30 @@ h1 {
     color: var(--creme);
 }
 
+i {
+    font-size: 2rem;
+}
+
+.fc-creme {
+    color: var(--creme);
+}
+
 .btnMenuHamburguer {
     border: 0px solid transparent;
+}
+
+.nav-itens {
+    background-color: var(--laranja);
+    color: var(--creme);
+}
+
+.menuInterno {
+    background-color: var(--laranja);
+}
+
+.nav-item a :hover {
+    background-color: var(--creme);
+    color: var(--laranja);
 }
 
 #logoImg {
