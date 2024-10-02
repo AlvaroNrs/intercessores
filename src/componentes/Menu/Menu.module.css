@@ -36,6 +36,10 @@ i {
     border: 0px solid transparent;
 }
 
+.btnMenuHamburguer:hover {
+    border: 0px solid transparent;
+}
+
 .nav-itens {
     background-color: var(--laranja);
     color: var(--creme);

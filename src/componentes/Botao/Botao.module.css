@@ -1,9 +1,9 @@
-button {
+.btnInteracao {
     border: 2px solid var(--marrom);
 }
 
-button:hover {
-    border: 1px solid var(--marrom);
-    background-color: var(--creme);
-    color: var(--marrom);
+.btnInteracao:hover {
+    border: 2px solid var(--marrom);
+    background-color: var(--marrom);
+    color: var(--creme);
 }

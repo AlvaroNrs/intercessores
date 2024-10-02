@@ -1,3 +1,9 @@
-a {
+.itemLink {
+    background-color: var(--laranja);
     color: var(--creme);
+}
+
+.itemLink:hover {
+    background-color: var(--creme);
+    color: var(--laranja);
 }

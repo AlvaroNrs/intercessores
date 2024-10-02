@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
-import './NavbarItem.module.css';
+import styles from './NavbarItem.module.css';
 
-export default function NavbarItem({titulo, pagina, corFonte}){
+export default function NavbarItem(props){
     return(
         <>
-            <Link className={`${"nav-link"} ${corFonte}`} aria-current="page" to={pagina}>{titulo}</Link>
+            <Link className={`${"nav-link"} ${props.corFonte} ${styles.itemLink}`} aria-current="page" to={props.pagina}>{props.titulo}</Link>
         </>
     );
 }

@@ -1,9 +1,9 @@
-import './Botao.module.css';
+import styles from './Botao.module.css';
 
-export default function Botao({texto, corFundo, corFonte, tamanhoFonte, alinhamento, arredondamento}){
+export default function Botao(props){
     return(
-        <button className={`${"btn"} ${corFonte} ${corFundo} ${tamanhoFonte} ${alinhamento} ${arredondamento}`}>
-            {texto}
+        <button className={`${"btn"} ${styles.btnInteracao} ${props.corFonte} ${props.corFundo} ${props.tamanhoFonte} ${props.alinhamento} ${props.arredondamento}`}>
+            {props.texto}
         </button>
     );
 }
