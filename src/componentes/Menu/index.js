@@ -12,7 +12,7 @@ export default function Menu() {
                 <section className="container-fluid d-md-block">
                     <section className="pb-3 pb-md-0 text-center d-flex align-baseline
                     justify-content-around justify-content-md-center gap-4">
-                        <section className="d-flex d-md-none">
+                        <section className="d-flex justify-content-between d-md-none">
                             <button className={`${"navbar-toggler"} ${styles.btnMenuHamburguer}`} type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                                 <i className="fa-solid fa-bars fc-creme"></i>
                             </button>

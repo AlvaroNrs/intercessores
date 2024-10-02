@@ -1,7 +1,15 @@
+import Titulo from 'componentes/Titulo';
 import styles from './ComoJogar.module.css';
+import AreaConteudo from 'paginas/AreaConteudo';
+import SumarioDropdown from 'componentes/SumarioDropdown';
 
 export default function ComoJogar(){
     return (
-        <h2>Como Jogar</h2>
+        <section className='text-center'>
+            <AreaConteudo paddingY={"py-3"} tamanhoFonte={"fs-4"} corFonte={"fc-marrom"} corFundo={"bgc-creme"}>
+                <Titulo corFonte={"fc-marrom"}>Como Jogar</Titulo>
+                <SumarioDropdown></SumarioDropdown>
+            </AreaConteudo>
+        </section>
     );
 }
