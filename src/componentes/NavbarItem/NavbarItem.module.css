@@ -8,12 +8,6 @@
     color: var(--laranja);
 }
 
-.linkDestaque {
-    background-color: var(--creme);
-    height: 0.5rem;
-    margin: 0 5rem;
-}
-
 @media (min-width: 768px) {
     .itemLink {
         color: var(--creme);
@@ -23,12 +17,18 @@
         color: var(--creme);
         background-color: transparent;
     }
+
+    .linkDestaque {
+        background-color: var(--creme);
+        height: 0.5rem;
+        margin: 0 5rem;
+    }
 }
 
 @media (min-width: 1440px) {
     .linkDestaque {
         background-color: var(--creme);
         height: 0.5rem;
-        margin: 0 16rem;
+        margin: 0 12rem;
     }
 }

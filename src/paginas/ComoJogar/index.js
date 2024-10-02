@@ -1,5 +1,7 @@
 import styles from './ComoJogar.module.css';
 
 export default function ComoJogar(){
-    return ("Como jogar...");
+    return (
+        <h2>Como Jogar</h2>
+    );
 }
