@@ -6,7 +6,7 @@ import Menu from "./componentes/Menu";
 import Footer from "./componentes/Footer";
 import ComoJogar from "paginas/ComoJogar";
 
-function App() {
+function AppRoutes() {
   return (
     <BrowserRouter>
       <Menu />
@@ -21,4 +21,4 @@ function App() {
   );
 }
 
-export default App;
+export default AppRoutes;
