@@ -4,6 +4,7 @@ import AreaConteudo from 'paginas/AreaConteudo';
 import SumarioDropdown from 'componentes/SumarioDropdown';
 import ParagrafoGrande from 'componentes/ParagrafoGrande';
 import TextoDestacadoCor from 'componentes/TextoDestacadoCor';
+import BotaoVoltarTopo from 'componentes/BotaoVoltarTopo';
 
 export default function ComoJogar() {
     return (
@@ -11,8 +12,9 @@ export default function ComoJogar() {
             <AreaConteudo paddingY={"py-3"} tamanhoFonte={"fs-4"} corFonte={"fc-marrom"} corFundo={"bgc-creme"}>
                 <Titulo corFonte={"fc-marrom"}>Como Jogar</Titulo>
                 <SumarioDropdown></SumarioDropdown>
+                <BotaoVoltarTopo></BotaoVoltarTopo>
                 <section className={`${"text-start"} ${styles.secaoConteudoGeral}`}>
-                    <section className="py-2">
+                    <section className="py-1">
                         <h3 id="pecas">1 - Peças</h3>
                         <ParagrafoGrande tamanhoFonte={"fs-4"} corFonte={"fc-laranja"}>
                             Há 2 tipos de cartas em Intercessores:
@@ -26,10 +28,10 @@ export default function ComoJogar() {
                             </li>
                         </ul>
                     </section>
-                    <section className="py-2">
+                    <section className="py-1">
                         <h4 id="cartasIntercessor">1.2 - Cartas de Intercessores</h4>
                         <ParagrafoGrande tamanhoFonte={"fs-4"} corFonte={"fc-laranja"}>
-                            Há 2 tipos de cartas em Intercessores:
+                            Cada Carta  de Intercessor tem:
                         </ParagrafoGrande>
                         <ul className="py-2 fc-laranja">
                             <li>
