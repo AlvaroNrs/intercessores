@@ -56,3 +56,7 @@ h1 {
   background-color: var(--preto);
 }
 
+.bgc-branca {
+  background-color: var(--branco);
+}
+

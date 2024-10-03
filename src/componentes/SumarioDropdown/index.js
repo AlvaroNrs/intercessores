@@ -22,19 +22,19 @@ export default function SumarioDropdown() {
                             <li className="d-flex flex-column text-start pt-2 justify-content-start">
                                 <a className="fc-branca" href="#pecas">1 - Peças</a>
                                 <a className="fc-branca d-flex" href="#cartasIntercessor">1.1 -<p className="ps-1 fc-marrom">Cartas de Intercessores</p></a>
-                                <a className="fc-branca d-flex" href="#">1.2 -<p className="ps-1 fc-marrom">Cartas de Pecados</p></a>
+                                <a className="fc-branca d-flex" href="#cartasPecado">1.2 -<p className="ps-1 fc-marrom">Cartas de Pecados</p></a>
                             </li>
                         </ol>
                         <ol className={`${"pt-2 pe-2 flex-wrap"} ${styles.listaConteudoSumario}`}>
                             <li className="d-flex flex-wrap flex-column text-start pt-2 justify-content-start">
-                                2 - Preparação para o Início do Jogo
+                                <a className="fc-branca" href="#preparacao">2 - Preparação para o Início do Jogo</a>
                             </li>
                         </ol>
                         <ol className={`${"pt-2"} ${styles.listaConteudoSumario}`}>
                             <li className="d-flex flex-column text-start pt-2 justify-content-start">
-                                3 - Rodadas
-                                <a className="fc-branca d-flex" href="#">3.1 -<p className="ps-1 fc-marrom">Turno de cada jogador</p></a>
-                                <a className="fc-branca d-flex" href="#">3.2 -<p className="ps-1 fc-marrom">Turno do Pecado</p></a>
+                                <a className="fc-branca" href="#rodadas">3 - Rodadas</a>
+                                <a className="fc-branca d-flex" href="turnoJogador">3.1 -<p className="ps-1 fc-marrom">Turno de cada jogador</p></a>
+                                <a className="fc-branca d-flex" href="turnoPecado">3.2 -<p className="ps-1 fc-marrom">Turno do Pecado</p></a>
                             </li>
                         </ol>
                         <ol className={`${"pt-2"} ${styles.listaConteudoSumario}`}>

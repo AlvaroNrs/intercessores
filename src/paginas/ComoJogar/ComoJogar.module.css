@@ -5,3 +5,19 @@
 .secaoConteudoGeral li {
     padding: 0;
 }
+
+.imagemManual {
+    max-width: 254px;
+}
+
+.tabelaJogadores {
+    border-radius: 15px;
+    border: 1px solid var(--marrom);
+    text-align: center;
+    font-size: 1rem;
+}
+
+.iconesVirtudes {
+    max-width: 90px;
+    max-height: 90px;
+}
