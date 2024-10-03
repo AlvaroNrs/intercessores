@@ -33,15 +33,15 @@ export default function SumarioDropdown() {
                         <ol className={`${"pt-2"} ${styles.listaConteudoSumario}`}>
                             <li className="d-flex flex-column text-start pt-2 justify-content-start">
                                 <a className="fc-branca" href="#rodadas">3 - Rodadas</a>
-                                <a className="fc-branca d-flex" href="turnoJogador">3.1 -<p className="ps-1 fc-marrom">Turno de cada jogador</p></a>
-                                <a className="fc-branca d-flex" href="turnoPecado">3.2 -<p className="ps-1 fc-marrom">Turno do Pecado</p></a>
+                                <a className="fc-branca d-flex" href="#turnoJogador">3.1 -<p className="ps-1 fc-marrom">Turno de cada jogador</p></a>
+                                <a className="fc-branca d-flex" href="#turnoPecado">3.2 -<p className="ps-1 fc-marrom">Turno do Pecado</p></a>
                             </li>
                         </ol>
                         <ol className={`${"pt-2"} ${styles.listaConteudoSumario}`}>
                             <li className="d-flex flex-column text-start pt-2 justify-content-start">
-                                4 - Vitória e Derrota
-                                <a className="fc-branca d-flex" href="#">4.1 -<p className="ps-1 fc-marrom">Condição de Vitória</p></a>
-                                <a className="fc-branca d-flex" href="#">4.2 -<p className="ps-1 fc-marrom">Condição de Derrota</p></a>
+                                <a className="fc-branca" href="#vitoriaDerrota">4 - Vitória e Derrota</a>
+                                <a className="fc-branca d-flex" href="#condicaoVitoria">4.1 -<p className="ps-1 fc-marrom">Condição de Vitória</p></a>
+                                <a className="fc-branca d-flex" href="#condicaoDerrota">4.2 -<p className="ps-1 fc-marrom">Condição de Derrota</p></a>
                             </li>
                         </ol>
                     </section>
