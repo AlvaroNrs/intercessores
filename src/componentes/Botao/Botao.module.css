@@ -7,3 +7,7 @@
     background-color: var(--marrom);
     color: var(--creme);
 }
+
+.arredondamento {
+    border-radius: 14.5px;
+}

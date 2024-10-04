@@ -25,7 +25,7 @@ export default function Inicio() {
                 </Paragrafo>
                 <Link to="/comoJogar">
                     <Botao corFundo={"bgc-creme"} corFonte={"fc-marrom"} tamanhoFonte={"fs-3"}
-                        alinhamento={"align-middle"} arredondamento={styles.botaoJogar} texto={"Aprenda a jogar"}></Botao>
+                        alinhamento={"align-middle"} arredondamento={styles.botaoJogar} texto={"Aprenda a jogar"}>Como jogar</Botao>
                 </Link>
             </AreaConteudo>
         </section>
