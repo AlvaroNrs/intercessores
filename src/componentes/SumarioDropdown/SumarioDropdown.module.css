@@ -22,9 +22,16 @@
 .listaSumario {
     border-radius: 14.5px;
     position: fixed;
+    top: 18%;
     z-index: 0;
     width: 280px;
     font-weight: 400;
+    color: var(--branca);
+    background-color: var(--laranja);
+}
+
+.tituloSumario {
+    color: var(--creme)
 }
 
 .secaoSumario ol {
@@ -41,5 +48,19 @@
         left: 10.5%;
         border-radius: 14.5px;
         min-width: 390px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .dropdonButton {
+        display: none;
+    }
+    .listaSumario {
+        color: var(--marrom);
+        background-color: transparent;
+        left: 5%;
+    }
+    .tituloSumario {
+        color: var(--laranja)
     }
 }
