@@ -41,23 +41,16 @@
     .tabelaJogadores {
         font-size: 1.5rem;
     }
-    .secaoConteudoGeral {
-        padding: 0 25%;
-    }
     .conteudoPagina {
         display: flex;
         flex-direction: row;
     }
     .divisaoLarge {
         display: flex;
-        flex-direction: column;
-        align-items: start;
+        flex-direction: row;
+        column-gap: 2.5rem;
     }
-
-    .divisaoLarge hr {
-        color: var(--marrom);
-        background-color: var(--marrom);
-        width: 2px;
-        height: 100%;
+    .separador {
+        border: solid 1px var(--marrom);        
     }
 }
