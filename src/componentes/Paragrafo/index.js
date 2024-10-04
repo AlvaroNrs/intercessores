@@ -1,7 +1,7 @@
-export default function ContentArea({fonte, texto}){
+export default function ContentArea({fonte, children}){
     return(
         <>
-            <p className={`${"pb-3"} ${fonte}`}>{texto}</p>
+            <p className={`${"py-3"} ${fonte}`}>{children}</p>
         </>
     );
 }

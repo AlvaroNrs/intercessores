@@ -1,0 +1,56 @@
+.secaoConteudoGeral {
+    margin-top: 5rem;
+}
+
+.secaoConteudoGeral li {
+    padding: 0;
+}
+
+.imagemManual {
+    max-width: 254px;
+}
+
+.resumoRodada {
+    max-width: 180px;
+}
+
+.tabelaJogadores {
+    border-radius: 15px;
+    border: 1px solid var(--marrom);
+    text-align: center;
+    font-size: 1rem;
+}
+
+.iconesVirtudes {
+    max-width: 90px;
+    max-height: 90px;
+}
+
+@media (min-width: 1440px) {
+    
+    .imagemManual {
+        max-width: 350px;
+    }
+    .resumoRodada {
+        min-width: 600px;
+    }
+    .iconesVirtudes {
+        max-width: 120px;
+        max-height: 120px;
+    }
+    .tabelaJogadores {
+        font-size: 1.5rem;
+    }
+    .conteudoPagina {
+        display: flex;
+        flex-direction: row;
+    }
+    .divisaoLarge {
+        display: flex;
+        flex-direction: row;
+        column-gap: 2.5rem;
+    }
+    .separador {
+        border: solid 1px var(--marrom);        
+    }
+}

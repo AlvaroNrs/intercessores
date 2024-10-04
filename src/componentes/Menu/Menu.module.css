@@ -36,6 +36,10 @@ i {
     border: 0px solid transparent;
 }
 
+.btnMenuHamburguer:hover {
+    border: 0px solid transparent;
+}
+
 .nav-itens {
     background-color: var(--laranja);
     color: var(--creme);
@@ -50,6 +54,19 @@ i {
     color: var(--laranja);
 }
 
-#logoImg {
+.logoImg {
     max-width: 5rem;
 }
+
+@media (min-width: 768px) {
+    .logoImg {
+        min-width: 10rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .logoImg {
+        min-width: 15rem;
+    }
+}
+

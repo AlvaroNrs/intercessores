@@ -1,0 +1,14 @@
+.botaoTopo {
+    position: fixed;
+    right: 5%;
+    bottom: 17%;
+    border: 0;
+    background-color: var(--marrom);
+    color: var(--branco);
+    border-radius: 12px;
+    padding: 2px 6px;
+}
+
+.iconeBotao {
+    font-size: 2.25rem;
+}

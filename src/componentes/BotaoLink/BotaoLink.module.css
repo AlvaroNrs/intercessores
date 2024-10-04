@@ -1,0 +1,13 @@
+.btnInteracao {
+    border: 2px solid var(--marrom);
+}
+
+.btnInteracao:hover {
+    border: 2px solid var(--marrom);
+    background-color: var(--marrom);
+    color: var(--creme);
+}
+
+.arredondamento {
+    border-radius: 14.5px;
+}

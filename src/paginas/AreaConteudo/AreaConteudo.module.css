@@ -1,0 +1,19 @@
+.area {
+    padding: 0 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .area {
+        padding: 0 8rem;
+    }
+}
+@media (min-width: 1440px) {
+    .area {
+        padding: 0 25.5rem;
+    }
+}
+@media (min-width: 1920px) {
+    .area {
+        padding: 0 40rem;
+    }
+}

@@ -9,3 +9,28 @@ p {
 i {
     font-size: 1.5rem;
 }
+
+.areaIcones {
+    padding: 0 5rem;
+}
+
+@media (min-width: 768px) {
+    i {
+        font-size: 2rem;
+    }
+
+    .areaIcones {
+        padding: 0 15rem;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    footer {
+        font-size: 1.15rem;
+    }
+
+    .areaIcones {
+        padding: 0 20rem;
+    }
+}
