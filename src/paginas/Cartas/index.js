@@ -6,7 +6,7 @@ import ConjuntoCartas from "componentes/ConjuntoCartas";
 export default function Cartas(){
     return(
         <section className="text-center">
-            <AreaConteudo paddingY={"py-3"} tamanhoFonte={"fs-4"} corFonte={"fc-laranja"} corFundo={"bgc-creme"}>
+            <AreaConteudo paddingY={"py-3"} paddingX={"px-0"} tamanhoFonte={"fs-4"} corFonte={"fc-laranja"} corFundo={"bgc-creme"}>
                 <Titulo>Cartas do Jogo</Titulo>
                 <ConjuntoCartas dados={baseDadosCartas} />
             </AreaConteudo>

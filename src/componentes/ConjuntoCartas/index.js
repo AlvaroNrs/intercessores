@@ -1,12 +1,12 @@
+import styles from "./ConjuntoCartas.module.css";
+
 export default function CartaUnica({ dados = [] }) {
     return (
-        <section className="py-4 container d-grid row">
+        <section className="justify-content-center my-3 mx-2 mx-sm-0 container-flex column-gap-3 row row-gap-3">
             {dados.map(carta =>
-                <div>
-                    <img src={carta.caminho} alt={carta.nome}/>
-                    <h3>{carta.caminho}</h3>
-                </div>
+                <img className={`${styles.cartaImg} ${"col-12 col-md-5 col-xl-2 align-items-center"}`} src={carta.caminho} alt={carta.nome} />
             )}
         </section>
+
     );
 }
