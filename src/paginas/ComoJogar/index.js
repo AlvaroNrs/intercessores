@@ -6,15 +6,15 @@ import ParagrafoGrande from 'componentes/ParagrafoGrande';
 import Paragrafo from 'componentes/Paragrafo';
 import TextoDestacadoCor from 'componentes/TextoDestacadoCor';
 import BotaoVoltarTopo from 'componentes/BotaoVoltarTopo';
-import explicIntercessor from 'assets/Explicacao_Intercessor2.png';
-import explicPecado from 'assets/Explicacao_Pecado2.png';
-import explicPecado2 from 'assets/Explicacao_Pecado3.png';
-import justica from 'assets/Justiça.png';
-import fortaleza from 'assets/Fortaleza.png';
-import prudencia from 'assets/Prudência.png';
-import temperanca from 'assets/Temperânça.png';
-import explicacaoRodada from 'assets/Resumo da Rodada2.png';
-import explicacaoRodada2 from 'assets/Resumo da Rodada.png';
+import explicIntercessor from 'assets/Manual/Explicacao_Intercessor2.png';
+import explicPecado from 'assets/Manual/Explicacao_Pecado2.png';
+import explicPecado2 from 'assets/Manual/Explicacao_Pecado3.png';
+import justica from 'assets/Manual/Justiça.png';
+import fortaleza from 'assets/Manual/Fortaleza.png';
+import prudencia from 'assets/Manual/Prudência.png';
+import temperanca from 'assets/Manual/Temperânça.png';
+import explicacaoRodada from 'assets/Manual/Resumo da Rodada2.png';
+import explicacaoRodada2 from 'assets/Manual/Resumo da Rodada.png';
 
 export default function ComoJogar() {
     return (

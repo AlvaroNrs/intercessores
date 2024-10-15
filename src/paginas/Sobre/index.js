@@ -1,6 +1,6 @@
 import AreaConteudo from 'paginas/AreaConteudo';
 import Paragrafo from 'componentes/Paragrafo';
-import imgCriador from 'assets/Ult_Yo_26_06_2022.png';
+import imgCriador from 'assets/Manual/Ult_Yo_26_06_2022.png';
 import styles from './Sobre.module.css';
 import BotaoLink from 'componentes/BotaoLink';
 

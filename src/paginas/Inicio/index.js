@@ -1,4 +1,4 @@
-import resumoVirtudes from 'assets/Resumo_Virtudes.png';
+import resumoVirtudes from 'assets/Manual/Resumo_Virtudes.png';
 import styles from './Inicio.module.css';
 import Paragrafo from 'componentes/Paragrafo';
 import Botao from 'componentes/Botao';
