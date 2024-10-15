@@ -1,0 +1,302 @@
+[
+    {
+        "nome": "Santa Bárbara",
+        "intercessao": 4,
+        "virtudes":["Temperanca"],
+        "caminho":"/CartasSantos/Santa Bárbara.png"
+    },
+    {
+        "nome": "Santa Cataria de Sena",
+        "intercessao": 3,
+        "virtudes":["Prudencia", "Temperanca"],
+        "caminho":"/CartasSantos/Santa Catarina de Sena.png"
+    },
+    {
+        "nome": "Santa Clara",
+        "intercessao": 5,
+        "virtudes":["Justica"],
+        "caminho":"/CartasSantos/Santa Clara.png"
+    },
+    {
+        "nome": "Santa Dulce dos Pobres",
+        "intercessao": 4,
+        "virtudes":["Justica","Temperanca"],
+        "caminho":"/CartasSantos/Santa Dulce dos Pobres.png"
+    },
+    {
+        "nome": "Santa Edwiges",
+        "intercessao": 3,
+        "virtudes":["Justica","Temperanca"],
+        "caminho":"/CartasSantos/Santa Edwiges.png"
+    },
+    {
+        "nome": "Santa Faustina Kowalska",
+        "intercessao": 4,
+        "virtudes":["Fortaleza"],
+        "caminho":"/CartasSantos/Santa Faustina Kowalska.png"
+    },
+    {
+        "nome": "Santa Felicidade",
+        "intercessao": 5,
+        "virtudes":["Fortaleza"],
+        "caminho":"/CartasSantos/Santa Felicidade.png"
+    },
+    {
+        "nome": "Santa Gianna Beretta Molla",
+        "intercessao": 3,
+        "virtudes":["Fortaleza","Temperanca"],
+        "caminho":"/CartasSantos/Santa Gianna Beretta Molla.png"
+    },
+    {
+        "nome": "Santa Hidelgarda de Bingen",
+        "intercessao": 4,
+        "virtudes":["Justica"],
+        "caminho":"/CartasSantos/Santa Hidelgarda de Bingen.png"
+    },
+    {
+        "nome": "Santa Joana d'Arc",
+        "intercessao": 4,
+        "virtudes":["Fortaleza"],
+        "caminho":"/CartasSantos/Santa Joana d'Arc.png"
+    },
+    {
+        "nome": "Santa Josefina Bakhita",
+        "intercessao": 4,
+        "virtudes":["Justica"],
+        "caminho":"/CartasSantos/Santa Josefina Bakhita.png"
+    },
+    {
+        "nome": "Santa Luzia",
+        "intercessao": 5,
+        "virtudes":["Temperanca"],
+        "caminho":"/CartasSantos/Santa Luzia.png"
+    },
+    {
+        "nome": "Santa Madre Teresa de Calcutá",
+        "intercessao": 5,
+        "virtudes":["Justica"],
+        "caminho":"/CartasSantos/Santa Madre Teresa de Calcutá.png"
+    },
+    {
+        "nome": "Santa Maria Madalena",
+        "intercessao": 4,
+        "virtudes":["Temperanca"],
+        "caminho":"/CartasSantos/Santa Maria Madalena.png"
+    },
+    {
+        "nome": "Santa Mônica",
+        "intercessao": 5,
+        "virtudes":["Fortaleza"],
+        "caminho":"/CartasSantos/Santa Mônica.png"
+    },
+    {
+        "nome": "Santa Perpétua",
+        "intercessao": 5,
+        "virtudes":["Fortaleza"],
+        "caminho":"/CartasSantos/Santa Perpétua.png"
+    },
+    {
+        "nome": "Santa Rita de Cássia",
+        "intercessao": 4,
+        "virtudes":["Fortaleza"],
+        "caminho":"/CartasSantos/Santa Rita de Cássia.png"
+    },
+    {
+        "nome": "Santa Teresa de Ávila",
+        "intercessao": 4,
+        "virtudes":["Temperanca"],
+        "caminho":"/CartasSantos/Santa Teresa de Ávila.png"
+    },
+    {
+        "nome": "Santa Teresinha",
+        "intercessao": 5,
+        "virtudes":["Temperanca"],
+        "caminho":"/CartasSantos/Santa Teresinha.png"
+    },
+    {
+        "nome": "Santa Agostinho",
+        "intercessao": 4,
+        "virtudes":["Justica", "Temperanca"],
+        "caminho":"/CartasSantos/Santo Agostinho.png"
+    },
+    {
+        "nome": "Santo André Kim Taegon",
+        "intercessao": 4,
+        "virtudes":["Justica"],
+        "caminho":"/CartasSantos/Santo André Kim Taegon.png"
+    },
+    {
+        "nome": "Santo André",
+        "intercessao": 4,
+        "virtudes":["Prudencia"],
+        "caminho":"/CartasSantos/Santo André.png"
+    },
+    {
+        "nome": "Santo Antônio de Pádua",
+        "intercessao": 3,
+        "virtudes":["Fortaleza","Prudencia"],
+        "caminho":"/CartasSantos/Santo Antônio de Pádua.png"
+    },
+    {
+        "nome": "Santo Antônio de Sant'Anna Galvão",
+        "intercessao": 5,
+        "virtudes":["Prudencia"],
+        "caminho":"/CartasSantos/Santo Antônio de Sant'Anna Galvão.png"
+    },
+    {
+        "nome": "Santo Expedito",
+        "intercessao": 5,
+        "virtudes":["Prudencia"],
+        "caminho":"/CartasSantos/Santo Expedito.png"
+    },
+    {
+        "nome": "Santo Inácio de Loyola",
+        "intercessao": 3,
+        "virtudes":["Fortaleza","Prudencia"],
+        "caminho":"/CartasSantos/Santo Inácio de Loyola.png"
+    },
+    {
+        "nome": "Santo Olavo da Noruega",
+        "intercessao": 4,
+        "virtudes":["Justica", "Prudencia"],
+        "caminho":"/CartasSantos/Santo Olavo da Noruega.png"
+    },
+    {
+        "nome": "Santo Tomás de Aquino",
+        "intercessao": 4,
+        "virtudes":["Justica", "Prudencia"],
+        "caminho":"/CartasSantos/Santo Tomás de Aquino.png"
+    },
+    {
+        "nome": "São Bartolomeu",
+        "intercessao": 3,
+        "virtudes":["Justica", "Fortaleza"],
+        "caminho":"/CartasSantos/São Bartolomeu.png"
+    },
+    {
+        "nome": "São Bento",
+        "intercessao": 4,
+        "virtudes":["Fortaleza", "Prudencia"],
+        "caminho":"/CartasSantos/São Bento.png"
+    },
+    {
+        "nome": "São Bernardo de Claraval",
+        "intercessao": 4,
+        "virtudes":["Prudencia"],
+        "caminho":"/CartasSantos/São Bernardo de Claraval.png"
+    },
+    {
+        "nome": "São Dimas",
+        "intercessao": 5,
+        "virtudes":["Justica"],
+        "caminho":"/CartasSantos/São Dimas.png"
+    },
+    {
+        "nome": "São Filipe Néri",
+        "intercessao": 4,
+        "virtudes":["Temperanca"],
+        "caminho":"/CartasSantos/São Filipe Néri.png"
+    },
+    {
+        "nome": "São Filipe, Apóstolo",
+        "intercessao": 4,
+        "virtudes":["Prudencia"],
+        "caminho":"/CartasSantos/São Filipe, Apóstolo.png"
+    },
+    {
+        "nome": "São Francisco de Assis",
+        "intercessao": 3,
+        "virtudes":["Justica", "Temperanca"],
+        "caminho":"/CartasSantos/São Francisco.png"
+    },
+    {
+        "nome": "São João Batista",
+        "intercessao": 4,
+        "virtudes":["Justica", "Fortaleza"],
+        "caminho":"/CartasSantos/São João Batista.png"
+    },
+    {
+        "nome": "São João, Evangelista",
+        "intercessao": 4,
+        "virtudes":["Justica", "Temperanca"],
+        "caminho":"/CartasSantos/São João Evangelista.png"
+    },
+    {
+        "nome": "São José Sánchez del Río",
+        "intercessao": 4,
+        "virtudes":["Fortaleza"],
+        "caminho":"/CartasSantos/São José Sánchez del Río.png"
+    },
+    {
+        "nome": "São Josemaria Escrivá",
+        "intercessao": 3,
+        "virtudes":["Fortaleza", "Temperanca"],
+        "caminho":"/CartasSantos/São Josemaria Escrivá.png"
+    },
+    {
+        "nome": "São Judas Tadeu",
+        "intercessao": 3,
+        "virtudes":["Justica", "Temperanca"],
+        "caminho":"/CartasSantos/São Judas Tadeu.png"
+    },
+    {
+        "nome": "São Mateus",
+        "intercessao": 3,
+        "virtudes":["Justica", "Prudencia"],
+        "caminho":"/CartasSantos/São Mateus.png"
+    },
+    {
+        "nome": "São Matias, Apóstolo",
+        "intercessao": 3,
+        "virtudes":["Fortaleza", "Prudencia"],
+        "caminho":"/CartasSantos/São Matias, Apóstolo.png"
+    },
+    {
+        "nome": "São Maximiliano Maria Kolbe",
+        "intercessao": 4,
+        "virtudes":["Temperanca"],
+        "caminho":"/CartasSantos/São Maximiliano Maria Kolbe.png"
+    },
+    {
+        "nome": "São Nicolau de Mira",
+        "intercessao": 4,
+        "virtudes":["Fortaleza"],
+        "caminho":"/CartasSantos/São Nicolau de Mira.png"
+    },
+    {
+        "nome": "São Paulo",
+        "intercessao": 4,
+        "virtudes":["Justica", "Fortaleza"],
+        "caminho":"/CartasSantos/São Paulo.png"
+    },
+    {
+        "nome": "São Pedro",
+        "intercessao": 4,
+        "virtudes":["Fortaleza", "Prudencia"],
+        "caminho":"/CartasSantos/São Pedro.png"
+    },
+    {
+        "nome": "São Simão, Apóstolo",
+        "intercessao": 4,
+        "virtudes":["Fortaleza"],
+        "caminho":"/CartasSantos/São Simão, Apóstolo.png"
+    },
+    {
+        "nome": "São Tiago Maior",
+        "intercessao": 4,
+        "virtudes":["Temperanca"],
+        "caminho":"/CartasSantos/São Tiago Maior.png"
+    },
+    {
+        "nome": "São Tiago Menor",
+        "intercessao": 3,
+        "virtudes":["Fortaleza", "Prudencia"],
+        "caminho":"/CartasSantos/São Tiago Menor.png"
+    },
+    {
+        "nome": "São Tomé, Apóstolo",
+        "intercessao": 4,
+        "virtudes":["Fortaleza", "Temperanca"],
+        "caminho":"/CartasSantos/São Tomé, Apóstolo.png"
+    }
+]
