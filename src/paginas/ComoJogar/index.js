@@ -227,39 +227,36 @@ export default function ComoJogar() {
                                         <section className="py-1 d-flex flex-column">
                                             <h4 id="turnoPecado">3.2 - Turno do Pecado</h4>
                                             <Paragrafo className="text-start" fonte={"fc-marrom"}>
-                                                Os jogadores recebem uma <TextoDestacadoCor corFonte={"fc-laranja"}>Penalidade</TextoDestacadoCor>, de acordo com o Pecado que os jogadores estão enfrentando no momento. (A penalidade é explicada no campo Penalidade da carta).
+                                            Os jogadores recebem uma Penalidade, de acordo com a Fraqueza do Pecado que os jogadores estão enfrentando no momento, como mostrado na tabela:
                                             </Paragrafo>
+                                            <table className={`${"table-bordered col-12"} ${styles.tabelaJogadores}`}>
+                                                    <thead className="bgc-laranja fc-branca">
+                                                        <tr>
+                                                            <th scope="col">Fraqueza</th>
+                                                            <th scope="col">Efeito</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody className="align-middle bgc-branca fc-preto">
+                                                        <tr>
+                                                            <th scope="row"><img className={styles.iconesVirtudes}  src={justica} alt="Ícone da Justiça"/></th>
+                                                            <th>Escolham entre si um jogador para pular o próximo turno</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row"><img className={styles.iconesVirtudes}  src={fortaleza} alt="Ícone da Fortaleza"/></th>
+                                                            <th>Escolham entre si um jogador para descartar 1 carta</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row"><img className={styles.iconesVirtudes}  src={prudencia} alt="Ícone da Prudência"/></th>
+                                                            <th>Escolham 1 Intercessor em jogo. Ele volta para voltar a mão de quem o jogou</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row"><img className={styles.iconesVirtudes}  src={temperanca} alt="Ícone da Temperança"/></th>
+                                                            <th>Cada jogador compra 1 carta e descarta 1 carta aleatoriamente</th>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             <Paragrafo className="text-start" fonte={"fc-marrom"}>
-                                                Após a <TextoDestacadoCor corFonte={"fc-laranja"}>Penalidade</TextoDestacadoCor>, são comparados dois valores:
-                                            </Paragrafo>
-                                            <ul className="py-2 fc-marrom">
-                                                <li>
-                                                    O valor da <TextoDestacadoCor corFonte={"fc-laranja"}>Dificuldade</TextoDestacadoCor> da <TextoDestacadoCor corFonte={"fc-laranja"}>Dificuldade</TextoDestacadoCor> da <TextoDestacadoCor corFonte={"fc-laranja"}>Carta de Pecado </TextoDestacadoCor> da rodada atual.
-                                                </li>
-                                                <li>
-                                                    A soma da <TextoDestacadoCor corFonte={"fc-laranja"}>Força de Intercessão</TextoDestacadoCor> de todas as cartas de <TextoDestacadoCor corFonte={"fc-laranja"}>Intercessores</TextoDestacadoCor> em jogo.
-                                                </li>
-                                            </ul>
-                                            <Paragrafo className="text-start" fonte={"fc-marrom"}>
-                                                Caso uma <TextoDestacadoCor corFonte={"fc-laranja"}>Carta de Intercessor</TextoDestacadoCor> tenha um <TextoDestacadoCor corFonte={"fc-laranja"}>Símbolo de Virtude</TextoDestacadoCor> correspondente à <TextoDestacadoCor corFonte={"fc-laranja"}>Fraqueza da Carta de Pecado</TextoDestacadoCor>, a
-                                                <TextoDestacadoCor corFonte={"fc-laranja"}>Força de Intercessão</TextoDestacadoCor> dessa carta é contada com um bônus de +2.
-                                            </Paragrafo>
-                                            <Paragrafo className="text-start" fonte={"fc-marrom"}>
-                                                Por exemplo, uma carta com <TextoDestacadoCor corFonte={"fc-laranja"}>Força de Intercessão</TextoDestacadoCor>  5 é contada como tendo <TextoDestacadoCor corFonte={"fc-laranja"}>Força de Intercessão 7</TextoDestacadoCor>.
-                                            </Paragrafo>
-                                            <Paragrafo className="text-start" fonte={"fc-marrom"}>
-                                                Se a soma da <TextoDestacadoCor corFonte={"fc-laranja"}>Força de Intercessão</TextoDestacadoCor> for igual ou superior ao da <TextoDestacadoCor corFonte={"fc-laranja"}>Dificuldade do Pecado</TextoDestacadoCor>, os jogadores vencem a rodada:
-                                            </Paragrafo>
-                                            <ul className="py-2 fc-marrom">
-                                                <li>
-                                                    A <TextoDestacadoCor corFonte={"fc-laranja"}>Carta de Pecado</TextoDestacadoCor> é colocada num monte à parte (apenas de Pecados derrotados) e as <TextoDestacadoCor corFonte={"fc-laranja"}>Cartas de Intercessores</TextoDestacadoCor> em jogo são colocadas no monte de descarte.
-                                                </li>
-                                                <li>
-                                                    Depois, o monte de descarte é colocado no fundo do monte de cartas de Intercessores e uma nova rodada se inicia.
-                                                </li>
-                                            </ul>
-                                            <Paragrafo className="text-start" fonte={"fc-marrom"}>
-                                                Porém, se a soma da <TextoDestacadoCor corFonte={"fc-laranja"}>Força de Intercessão</TextoDestacadoCor> for menor que o da <TextoDestacadoCor corFonte={"fc-laranja"}>Dificuldade do Pecado</TextoDestacadoCor>, a rodada continua. É a vez do primeiro jogador novamente.
+                                                Após a <TextoDestacadoCor corFonte={"fc-laranja"}>Penalidade</TextoDestacadoCor>, a rodada continua. É a vez do primeiro jogador novamente.
                                             </Paragrafo>
                                             <img className={`${"py-2 align-self-center"} ${styles.resumoRodada}`} src={window.screen.width < 1440 ? explicacaoRodada : explicacaoRodada2}
                                                 alt={"Frente da Carta de Pecado"} />

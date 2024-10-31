@@ -34,6 +34,9 @@
     .exemploIntPec {
         max-width: 200px;
     }
+    .resumoRodada {
+        min-width: 450px;
+    }
 }
 
 @media (min-width: 1440px) {
