@@ -9,12 +9,16 @@ import BotaoVoltarTopo from 'componentes/BotaoVoltarTopo';
 import explicIntercessor from 'assets/Manual/Explicacao_Intercessor2.png';
 import explicPecado from 'assets/Manual/Explicacao_Pecado2.png';
 import explicPecado2 from 'assets/Manual/Explicacao_Pecado3.png';
+import explicVirtTelo from 'assets/Manual/Explicacao_Virtude_Teologal.png';
 import justica from 'assets/Manual/Justiça.png';
 import fortaleza from 'assets/Manual/Fortaleza.png';
 import prudencia from 'assets/Manual/Prudência.png';
 import temperanca from 'assets/Manual/Temperânça.png';
 import explicacaoRodada from 'assets/Manual/Resumo da Rodada2.png';
 import explicacaoRodada2 from 'assets/Manual/Resumo da Rodada.png';
+import exemploSanta from 'assets/Manual/Santa Catarina de Sena.png';
+import exemploPecado from 'assets/Manual/Ignorar os próprios escrúpulos.png';
+import baseCartasVirtudesTeologais from "../../virtueCards.json";
 
 export default function ComoJogar() {
     return (
@@ -30,16 +34,22 @@ export default function ComoJogar() {
                                 <div className={styles.separador}></div>
                                 <section>
                                     <section className="py-1">
-                                        <h3 id="pecas">1 - Peças</h3>
+                                        <h3 id="introEpecas">1 - Introdução e Peças</h3>
+                                        <ParagrafoGrande tamanhoFonte={"fs-4"} corFonte={"cd-preta"}>
+                                            Intercessores é um jogo de cartas cooperativo baseado nas Virtudes Cardeais e Teologais, bem como nos santos da Santa Igreja Católica.
+                                        </ParagrafoGrande>
                                         <ParagrafoGrande tamanhoFonte={"fs-4"} corFonte={"fc-laranja"}>
-                                            Há 2 tipos de cartas em Intercessores:
+                                            Há 3 tipos de cartas no jogo:
                                         </ParagrafoGrande>
                                         <ul className="py-2 fc-laranja">
                                             <li>
-                                                Cartas de Intercessores<TextoDestacadoCor corFonte={"fc-marrom"}>, cada uma representa um santo ou santa.</TextoDestacadoCor>
+                                                Cartas de Intercessores<TextoDestacadoCor corFonte={"fc-marrom"}> - as cartas usadas pelos jogadores para vencer os pecados.</TextoDestacadoCor>
                                             </li>
                                             <li>
-                                                Cartas de Pecado<TextoDestacadoCor corFonte={"fc-marrom"}>, cada uma representando um pecado.</TextoDestacadoCor>
+                                                Cartas de Pecado<TextoDestacadoCor corFonte={"fc-marrom"}> – os oponentes dos jogadores. Neste jogo, os jogadores se ajudam para combater essas cartas.</TextoDestacadoCor>
+                                            </li>
+                                            <li>
+                                                Cartas de Virtudes Teologais<TextoDestacadoCor corFonte={"fc-marrom"}> – Símbolos dos quais cada símbolo representa uma das 4 Virtudes Cardeais, segundo a tabela:</TextoDestacadoCor>
                                             </li>
                                         </ul>
                                         <section className="py-1 d-flex flex-column">
@@ -49,13 +59,31 @@ export default function ComoJogar() {
                                             </ParagrafoGrande>
                                             <img className={`${"py-2 align-self-center"} ${styles.imagemManual}`} src={explicIntercessor} alt={"Carta de Intercessor com detalhes explicativos"} />
                                             <Paragrafo className="text-start" fonte={"fc-laranja"}>
-                                                1 - Nome do Intercessor –<TextoDestacadoCor corFonte={"fc-marrom"}> O nome próprio do Santo, Santa ou Anjo.</TextoDestacadoCor>
+                                                1 - Nome do Intercessor –<TextoDestacadoCor corFonte={"fc-marrom"}> O nome do Santo ou Santa.</TextoDestacadoCor>
                                             </Paragrafo>
                                             <Paragrafo className="text-start" fonte={"fc-laranja"}>
-                                                2 - Força de Intercessão –<TextoDestacadoCor corFonte={"fc-marrom"}> O atributo usado no combate às cartas de Pecados.</TextoDestacadoCor>
+                                                2 - Pontos de Intercessão –<TextoDestacadoCor corFonte={"fc-marrom"}> Um número que aumenta os Pontos de Intercessão do grupo.</TextoDestacadoCor>
                                             </Paragrafo>
                                             <Paragrafo className="text-start" fonte={"fc-laranja"}>
-                                                3 - Virtudes do Intercessor –<TextoDestacadoCor corFonte={"fc-marrom"}> Cada carta possui um ou dois desses símbolos. Cada símbolo representa uma das Virtudes Cardeais.</TextoDestacadoCor>
+                                                3 - Virtudes do Intercessor –<TextoDestacadoCor corFonte={"fc-marrom"}> Símbolos dos quais cada símbolo representa uma das 4 Virtudes Cardeais:</TextoDestacadoCor>
+                                                <section className="d-flex flex-column flex-xxl-row  gap-3 fs-5 fc-marrom">
+                                                    <section className="d-flex flex-row gap-2 align-items-center text-left">
+                                                        <img className={styles.iconesVirtudes} src={justica} alt="Símbolo de Justiça" />
+                                                        <p className="py-0"><TextoDestacadoCor corFonte={"fc-laranja"}>Justiça </TextoDestacadoCor></p>
+                                                    </section>
+                                                    <section className="d-flex flex-row gap-2 align-items-center text-left">
+                                                        <img className={styles.iconesVirtudes} src={fortaleza} alt="Símbolo de Fortaleza" />
+                                                        <p className="py-0"><TextoDestacadoCor corFonte={"fc-laranja"}>Fortaleza </TextoDestacadoCor></p>
+                                                    </section>
+                                                    <section className="d-flex flex-row gap-2 align-items-center text-left">
+                                                        <img className={styles.iconesVirtudes} src={prudencia} alt="Símbolo de Prudência" />
+                                                        <p className="py-0"><TextoDestacadoCor corFonte={"fc-laranja"}>Prudência </TextoDestacadoCor></p>
+                                                    </section>
+                                                    <section className="d-flex flex-row gap-2 align-items-center text-left">
+                                                        <img className={styles.iconesVirtudes} src={temperanca} alt="Símbolo de Temperança" />
+                                                        <p className="py-0"><TextoDestacadoCor corFonte={"fc-laranja"}>Temperança </TextoDestacadoCor></p>
+                                                    </section>
+                                                </section>
                                             </Paragrafo>
                                         </section>
                                         <section className="py-1 d-flex flex-column">
@@ -65,13 +93,13 @@ export default function ComoJogar() {
                                             </ParagrafoGrande>
                                             <img className={`${"py-2 align-self-center"} ${styles.imagemManual}`} src={explicPecado} alt={"Frente da Carta de Pecado"} />
                                             <Paragrafo className="text-start" fonte={"fc-laranja"}>
-                                                1 - Nome do Pecado –<TextoDestacadoCor corFonte={"fc-marrom"}> O nome próprio do pecado.</TextoDestacadoCor>
+                                                1 - Nome do Pecado –<TextoDestacadoCor corFonte={"fc-marrom"}> O nome do pecado.</TextoDestacadoCor>
                                             </Paragrafo>
                                             <Paragrafo className="text-start" fonte={"fc-laranja"}>
-                                                2 - Dificuldade –<TextoDestacadoCor corFonte={"fc-marrom"}> atributo que combate as cartas de Intercessores.</TextoDestacadoCor>
+                                                2 - Dificuldade –<TextoDestacadoCor corFonte={"fc-marrom"}> Número que combate os Pontos de Intercessão do grupo.</TextoDestacadoCor>
                                             </Paragrafo>
                                             <Paragrafo className="text-start" fonte={"fc-laranja"}>
-                                                3 -  Virtude correspondente à Fraqueza –<TextoDestacadoCor corFonte={"fc-marrom"}> O símbolo da Virtude Cardeal que é a fraqueza desse Pecado.</TextoDestacadoCor>
+                                                3 -  Fraqueza –<TextoDestacadoCor corFonte={"fc-marrom"}> A Virtude Cardeal que é a fraqueza desse Pecado. Cartas de Intercessores com essa Virtude ficam mais fortes contra esse pecado.</TextoDestacadoCor>
                                             </Paragrafo>
                                             <Paragrafo className="text-start" fonte={"fc-laranja"}>
                                                 4 - Penalidade –<TextoDestacadoCor corFonte={"fc-marrom"}> A explicação da penalidade que os jogadores recebem na vez do Pecado.</TextoDestacadoCor>
@@ -79,55 +107,82 @@ export default function ComoJogar() {
                                             <ParagrafoGrande tamanhoFonte={"fs-4"} corFonte={"fc-marrom"}>
                                                 Já no seu verso, cada carta de Pecado possui um número, representando seu Nível:
                                             </ParagrafoGrande>
-                                            <img className={`${"py-2 align-self-center"} ${styles.imagemManual}`} src={explicPecado2} alt={"Verso Carta de Pecado"} />
+                                            <img className={`${"py-3 align-self-center"} ${styles.imagemManual}`} src={explicPecado2} alt={"Verso Carta de Pecado"} />
+                                            <ParagrafoGrande tamanhoFonte={"fs-4"} corFonte={"cd-preta"}>
+                                                Quanto maior o nível da carta, mais difícil do a ser enfrentado.
+                                            </ParagrafoGrande>
+                                        </section>
+                                        <section className="py-1 d-flex flex-column">
+                                            <h4 id="cartasVirtudesT">1.3 - Cartas de Virtudes Teologais</h4>
+                                            <ParagrafoGrande tamanhoFonte={"fs-4"} corFonte={"fc-laranja"}>
+                                                Cada Carta  de Virtude Teologal tem:
+                                            </ParagrafoGrande>
+                                            <img className={`${"py-2 align-self-center"} ${styles.imagemManual}`} src={explicVirtTelo} alt={"Frente da Carta de Virtude Teologal"} />
+                                            <Paragrafo className="text-start" fonte={"fc-laranja"}>
+                                                1 - Nome –<TextoDestacadoCor corFonte={"fc-marrom"}> O nome da Virtude Teologal.</TextoDestacadoCor>
+                                            </Paragrafo>
+                                            <Paragrafo className="text-start" fonte={"fc-laranja"}>
+                                                2 - Símbolo –<TextoDestacadoCor corFonte={"fc-marrom"}> Um símbolo correspondente à Virtude Teologal.</TextoDestacadoCor>
+                                            </Paragrafo>
+                                            <Paragrafo className="text-start" fonte={"fc-laranja"}>
+                                                3 -  Efeito –<TextoDestacadoCor corFonte={"fc-marrom"}> A descrição do efeito que ocorre quando a carta é jogada.</TextoDestacadoCor>
+                                            </Paragrafo>
+                                            <ParagrafoGrande tamanhoFonte={"fs-4"} corFonte={"fc-marrom"}>
+                                                Existem 3 tipos de cartas de Virtudes Teologais, cada uma com um efeito diferente:
+                                            </ParagrafoGrande>
+                                            <section className="justify-content-center my-3 mx-2 mx-sm-0 container-flex column-gap-3 row row-gap-3">
+                                                {baseCartasVirtudesTeologais.map(carta =>
+                                                    <img className={`${styles.imagemManual} ${"col-xl-3 align-items-center"}`}
+                                                        src={carta.caminho} alt={carta.nome} />
+                                                )}
+                                            </section>
                                         </section>
                                     </section>
                                     <section className="py-1">
                                         <h3 id="preparacao">2 - Preparação para Início do Jogo</h3>
                                         <ul className="py-2 fc-marrom d-flex flex-column row-gap-5">
                                             <li>
-                                                As <TextoDestacadoCor corFonte={"fc-laranja"}>Cartas de Intercessores</TextoDestacadoCor> são embaralhadas e o monte delas é colocado próximo dos jogadores virado para baixo.
+                                                As <TextoDestacadoCor corFonte={"fc-laranja"}>Cartas de Intercessores e de Virtudes Teologais</TextoDestacadoCor> são embaralhadas num mesmo monte. O monte é colocado próximo dos jogadores virado para baixo.
                                             </li>
                                             <li>
-                                                As <TextoDestacadoCor corFonte={"fc-laranja"}>Cartas de Pecados</TextoDestacadoCor> são separadas em três montes, de acordo com o Nível presente no verso da carta.<TextoDestacadoCor corFonte={"fc-laranja"}> Cada monte é embaralhado separadamente.</TextoDestacadoCor>
+                                                As <TextoDestacadoCor corFonte={"fc-laranja"}>Cartas de Pecados</TextoDestacadoCor> são separadas em três montes, cada um de acordo com o Nível das cartas (cartas de Nível 1 ficam num mesmo monte e separadas das outras cartas de pecado. O mesmo vale para as cartas de pecado dos demais níveis).
                                             </li>
                                             <li>
-                                                Por fim, os montes de <TextoDestacadoCor corFonte={"fc-laranja"}>Cartas de Pecados</TextoDestacadoCor> são colocados um sobre o outro, em ordem crescente de cima para baixo (o monte de Nível 3 fica embaixo, o de Nível 2 sobre ele e depois o de Nível 1. As cartas ficam com a face voltada para baixo)*.
-                                                <Paragrafo fonte={"fs-5"}>*Caso o jogo seja jogado por apenas 2 jogadores, somente os montes de Nível 1 e 2 são utilizados, com o de Nível 1 ficando sobre o de Nível 2.</Paragrafo>
+                                                Os jogadores pegam um dos montes das cartas de pecado para enfrentar, de acordo com o número de jogadores e segundo a tabela:
+                                                <table className={`${"table-bordered col-12"} ${styles.tabelaJogadores}`}>
+                                                    <thead className="bgc-laranja fc-branca">
+                                                        <tr>
+                                                            <th scope="col">Número de Jogadores</th>
+                                                            <th scope="col">Monte de Cartas com o qual se joga</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody className="align-middle bgc-branca fc-preto">
+                                                        <tr>
+                                                            <th scope="row">3</th>
+                                                            <th>Pecados de Nível 1</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">4</th>
+                                                            <th>Pecados de Nível 2</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">5</th>
+                                                            <th>Pecados de Nível 3</th>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </li>
+                                            <li>O monte de cartas de Pecado a ser enfrentado é embaralhado e colocado virado para baixo perto do monte de cartas de Intercessores. Os demais são guardados.</li>
+                                            <li>
+                                                Cada jogador recebe 4 cartas do monte de cartas de Intercessores. Segue-se depois para o início da primeira rodada.
                                             </li>
                                         </ul>
-                                        <Paragrafo>
-                                            Segue-se depois para o início da primeira rodada.
-                                        </Paragrafo>
                                     </section>
                                     <section className="py-1">
                                         <h3 id="rodadas">3 - Rodadas</h3>
                                         <ParagrafoGrande tamanhoFonte={"fs-4"} corFonte={"fc-marrom"}>
-                                            A carta do topo do monte de cartas de Pecado é virada para cima. Esse é o Pecado que os jogadores enfrentarão nesta rodada.
+                                            No início de cada rodada, a carta do topo do monte de cartas de Pecado é virada para cima. Esse é o Pecado que os jogadores enfrentarão nesta rodada.
                                         </ParagrafoGrande>
-                                        <ParagrafoGrande paddingTY={"py-3"} tamanhoFonte={"fs-4"} corFonte={"fc-marrom"}>
-                                            Cada jogador compra cartas do monte de cartas de Intercessores até chegar ao limite máximo de cartas na mão. O limite de cartas na mão varia de acordo com o número de jogadores, segundo a tabela:
-                                        </ParagrafoGrande>
-                                        <div className="d-grid row text-center container">
-                                            <table className={`${"table-bordered col-12"} ${styles.tabelaJogadores}`}>
-                                                <thead className="bgc-laranja fc-branca">
-                                                    <tr>
-                                                        <th scope="col">Número de Jogadores</th>
-                                                        <th scope="col">Limite de Cartas na mão</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody className="align-middle bgc-branca fc-preto">
-                                                    <tr>
-                                                        <th scope="row">Entre 2 e 3</th>
-                                                        <th>5</th>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Entre 4 e 5</th>
-                                                        <th>4</th>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
                                         <ParagrafoGrande paddingTY={"py-3"} tamanhoFonte={"fs-4"} corFonte={"fc-marrom"}>
                                             Após isso, é a vez do primeiro jogador.
                                         </ParagrafoGrande>
@@ -138,85 +193,70 @@ export default function ComoJogar() {
                                             </ParagrafoGrande>
                                             <ul className="py-2 fc-marrom d-flex flex-column row-gap-4">
                                                 <li>
-                                                    Colocar uma <TextoDestacadoCor corFonte={"fc-laranja"}>Carta de Intercessor</TextoDestacadoCor> da mão em jogo. Essa carta é então considerada um <TextoDestacadoCor corFonte={"fc-laranja"}>Intercessor</TextoDestacadoCor> de quem a jogou. Não há limite para o número de Intercessores que um jogador pode ter ao mesmo tempo.
+                                                    Colocar uma <TextoDestacadoCor corFonte={"fc-laranja"}>Carta de Intercessor</TextoDestacadoCor>da mão em jogo. Cartas de Intercessores jogados ficam em jogo até o fim da rodada.
                                                     <ul className="fs-5">
-                                                        <li>Caso um jogador tenha mais de um Intercessor, ele forma um monte das Cartas de seus Intercessores, deixando sempre o último Intercessor no topo do monte.</li>
+                                                        <li>Os Pontos de Intercessão da carta aumentam os Pontos de Intercessão do grupo. Os Pontos de Intercessão do grupo é o total da soma dos pontos de todas as cartas em jogo.
+                                                            Intercessores com um símbolo de Virtude igual ao da Fraqueza do Pecado enfrentado na rodada possuem 1 Ponto de Intercessão a mais do que o valor indicado na carta.</li>
                                                     </ul>
-                                                </li>
-                                                <li>
-                                                    Descartar uma carta da mão para rezar a um <TextoDestacadoCor corFonte={"fc-laranja"}>Intercessor</TextoDestacadoCor> de algum jogador (a carta descartada vai para o monte de descarte com a face voltada para cima).
-                                                    <Paragrafo>Se um jogador tiver mais de um Intercessor em jogo, só é possível rezar ao último Intercessor daquele jogador (o Intercessor do topo do monte dele).</Paragrafo>
-                                                    <Paragrafo>Rezar a um Intercessor faz um efeito diferente de acordo com os Símbolos de Virtude do Intercessor, de acordo com a tabela abaixo. (Se a carta de Intercessor tiver dois símbolos de Virtude, o jogador do turno escolhe um dos efeitos).</Paragrafo>
-                                                    <section className="d-flex flex-column gap-3 fs-5 fc-marrom">
-                                                        <section className="d-flex flex-row gap-2 align-items-center text-left">
-                                                            <img className={styles.iconesVirtudes} src={justica} alt="Símbolo de Justiça" />
-                                                            <p className="py-0"><TextoDestacadoCor corFonte={"fc-laranja"}>Justiça </TextoDestacadoCor> - Os outros jogadores compram uma carta*</p>
-                                                        </section>
-                                                        <section className="d-flex flex-row gap-2 align-items-center text-left">
-                                                            <img className={styles.iconesVirtudes} src={fortaleza} alt="Símbolo de Fortaleza" />
-                                                            <p className="py-0"><TextoDestacadoCor corFonte={"fc-laranja"}>Fortaleza </TextoDestacadoCor> - O jogador do turno compra duas cartas*</p>
-                                                        </section>
-                                                        <section className="d-flex flex-row gap-2 align-items-center text-left">
-                                                            <img className={styles.iconesVirtudes} src={prudencia} alt="Símbolo de Prudência" />
-                                                            <p className="py-0"><TextoDestacadoCor corFonte={"fc-laranja"}>Prudência </TextoDestacadoCor> - Você coloca uma carta de
-                                                                Intercessor da mão em jogo e compra uma carta</p>
-                                                        </section>
-                                                        <section className="d-flex flex-row gap-2 align-items-center text-left">
-                                                            <img className={styles.iconesVirtudes} src={temperanca} alt="Símbolo de Temperança" />
-                                                            <p className="py-0"><TextoDestacadoCor corFonte={"fc-laranja"}>Temperança </TextoDestacadoCor> - Você escolhe um jogador
-                                                                para ignorar a Penalidade do
-                                                                Pecado neste turno</p>
-                                                        </section>
+                                                    <section className="d-flex flex-row text-center justify-content-center column-gap-3">
+                                                        <img className={styles.exemploIntPec} src={exemploSanta} alt="Carta de Santa Catarina de Sena" />
+                                                        <img className={styles.exemploIntPec} src={exemploPecado} alt="Carta de Pecado" />
                                                     </section>
+                                                    <Paragrafo>A carta de Santa Catarina de Sena possui o símbolo da Prudência, a Fraqueza de Ignorar os próprios Escrúpulos. Neste caso, o número de Pontos de Intercessão de Santa Catarina de Sena é 4 ao invés de 3.</Paragrafo>
                                                 </li>
                                                 <li>
-                                                    Descartar uma carta para interceder por outro jogador à escolha. O jogador escolhido compra duas cartas*.
+                                                    Jogar uma carta de Virtude Teologal. O efeito descrito na carta acontece e depois ela é colocada no monte de descarte.
                                                 </li>
                                                 <li>
-                                                    Pular sua vez.
+                                                    Descartar uma carta da mão para interceder por outro jogador à escolha. O jogador escolhido compra duas cartas e a carta descartada vai para o monte de descarte.
+                                                </li>
+                                                <li>
+                                                    Pular sua vez, caso o jogador queira guardar cartas na mão.
                                                 </li>
                                             </ul>
-                                            <p className="py-0 fs-5">*Os jogadores não podem comprar cartas além do limite máximo.</p>
                                             <Paragrafo className="text-start" fonte={"fc-marrom"}>
-                                                Após o primeiro jogador fazer a ação de seu turno, é a vez do próximo jogador, até o último. Depois da vez do último jogador, é a vez da <TextoDestacadoCor corFonte={"fc-laranja"}>Carta de  Pecado</TextoDestacadoCor>.
+                                            Sempre que um jogador colocar um Intercessor da mão em jogo, os jogadores devem verificar se o total dos Pontos de Intercessão do grupo é igual ou maior ao Dificuldade do Pecado enfrentado.
+                                            </Paragrafo>
+                                            <Paragrafo className="text-start" fonte={"fc-marrom"}>
+                                            Em caso positivo, os jogadores vencem a rodada: as cartas em jogo e no monte de descarte são colocadas no monte de cartas de Intercessores e cada jogador recebe uma carta. Inicia-se então uma nova rodada.
+                                            </Paragrafo>
+                                            <Paragrafo className="text-start" fonte={"fc-marrom"}>
+                                            Se o valor da Dificuldade do Pecado não foi atingido, o jogador do turno descarta cartas da mão até ficar com no máximo 4. Ele passa a vez ao próximo jogador e assim o jogo segue, até o último. Depois da vez do último jogador, se o pecado não foi vencido, é a vez da carta de Pecado.
                                             </Paragrafo>
                                         </section>
                                         <section className="py-1 d-flex flex-column">
                                             <h4 id="turnoPecado">3.2 - Turno do Pecado</h4>
                                             <Paragrafo className="text-start" fonte={"fc-marrom"}>
-                                                Os jogadores recebem uma <TextoDestacadoCor corFonte={"fc-laranja"}>Penalidade</TextoDestacadoCor>, de acordo com o Pecado que os jogadores estão enfrentando no momento. (A penalidade é explicada no campo Penalidade da carta).
+                                            Os jogadores recebem uma Penalidade, de acordo com a Fraqueza do Pecado que os jogadores estão enfrentando no momento, como mostrado na tabela:
                                             </Paragrafo>
+                                            <table className={`${"table-bordered col-12"} ${styles.tabelaJogadores}`}>
+                                                    <thead className="bgc-laranja fc-branca">
+                                                        <tr>
+                                                            <th scope="col">Fraqueza</th>
+                                                            <th scope="col">Efeito</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody className="align-middle bgc-branca fc-preto">
+                                                        <tr>
+                                                            <th scope="row"><img className={styles.iconesVirtudes}  src={justica} alt="Ícone da Justiça"/></th>
+                                                            <th>Escolham entre si um jogador para pular o próximo turno</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row"><img className={styles.iconesVirtudes}  src={fortaleza} alt="Ícone da Fortaleza"/></th>
+                                                            <th>Escolham entre si um jogador para descartar 1 carta</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row"><img className={styles.iconesVirtudes}  src={prudencia} alt="Ícone da Prudência"/></th>
+                                                            <th>Escolham 1 Intercessor em jogo. Ele volta para voltar a mão de quem o jogou</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row"><img className={styles.iconesVirtudes}  src={temperanca} alt="Ícone da Temperança"/></th>
+                                                            <th>Cada jogador compra 1 carta e descarta 1 carta aleatoriamente</th>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             <Paragrafo className="text-start" fonte={"fc-marrom"}>
-                                                Após a <TextoDestacadoCor corFonte={"fc-laranja"}>Penalidade</TextoDestacadoCor>, são comparados dois valores:
-                                            </Paragrafo>
-                                            <ul className="py-2 fc-marrom">
-                                                <li>
-                                                    O valor da <TextoDestacadoCor corFonte={"fc-laranja"}>Dificuldade</TextoDestacadoCor> da <TextoDestacadoCor corFonte={"fc-laranja"}>Dificuldade</TextoDestacadoCor> da <TextoDestacadoCor corFonte={"fc-laranja"}>Carta de Pecado </TextoDestacadoCor> da rodada atual.
-                                                </li>
-                                                <li>
-                                                    A soma da <TextoDestacadoCor corFonte={"fc-laranja"}>Força de Intercessão</TextoDestacadoCor> de todas as cartas de <TextoDestacadoCor corFonte={"fc-laranja"}>Intercessores</TextoDestacadoCor> em jogo.
-                                                </li>
-                                            </ul>
-                                            <Paragrafo className="text-start" fonte={"fc-marrom"}>
-                                                Caso uma <TextoDestacadoCor corFonte={"fc-laranja"}>Carta de Intercessor</TextoDestacadoCor> tenha um <TextoDestacadoCor corFonte={"fc-laranja"}>Símbolo de Virtude</TextoDestacadoCor> correspondente à <TextoDestacadoCor corFonte={"fc-laranja"}>Fraqueza da Carta de Pecado</TextoDestacadoCor>, a
-                                                <TextoDestacadoCor corFonte={"fc-laranja"}>Força de Intercessão</TextoDestacadoCor> dessa carta é contada com um bônus de +2.
-                                            </Paragrafo>
-                                            <Paragrafo className="text-start" fonte={"fc-marrom"}>
-                                                Por exemplo, uma carta com <TextoDestacadoCor corFonte={"fc-laranja"}>Força de Intercessão</TextoDestacadoCor>  5 é contada como tendo <TextoDestacadoCor corFonte={"fc-laranja"}>Força de Intercessão 7</TextoDestacadoCor>.
-                                            </Paragrafo>
-                                            <Paragrafo className="text-start" fonte={"fc-marrom"}>
-                                                Se a soma da <TextoDestacadoCor corFonte={"fc-laranja"}>Força de Intercessão</TextoDestacadoCor> for igual ou superior ao da <TextoDestacadoCor corFonte={"fc-laranja"}>Dificuldade do Pecado</TextoDestacadoCor>, os jogadores vencem a rodada:
-                                            </Paragrafo>
-                                            <ul className="py-2 fc-marrom">
-                                                <li>
-                                                    A <TextoDestacadoCor corFonte={"fc-laranja"}>Carta de Pecado</TextoDestacadoCor> é colocada num monte à parte (apenas de Pecados derrotados) e as <TextoDestacadoCor corFonte={"fc-laranja"}>Cartas de Intercessores</TextoDestacadoCor> em jogo são colocadas no monte de descarte.
-                                                </li>
-                                                <li>
-                                                    Depois, o monte de descarte é colocado no fundo do monte de cartas de Intercessores e uma nova rodada se inicia.
-                                                </li>
-                                            </ul>
-                                            <Paragrafo className="text-start" fonte={"fc-marrom"}>
-                                                Porém, se a soma da <TextoDestacadoCor corFonte={"fc-laranja"}>Força de Intercessão</TextoDestacadoCor> for menor que o da <TextoDestacadoCor corFonte={"fc-laranja"}>Dificuldade do Pecado</TextoDestacadoCor>, a rodada continua. É a vez do primeiro jogador novamente.
+                                                Após a <TextoDestacadoCor corFonte={"fc-laranja"}>Penalidade</TextoDestacadoCor>, a rodada continua. É a vez do primeiro jogador novamente.
                                             </Paragrafo>
                                             <img className={`${"py-2 align-self-center"} ${styles.resumoRodada}`} src={window.screen.width < 1440 ? explicacaoRodada : explicacaoRodada2}
                                                 alt={"Frente da Carta de Pecado"} />

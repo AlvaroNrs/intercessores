@@ -21,9 +21,22 @@
     font-size: 1rem;
 }
 
+.exemploIntPec {
+    max-width: 150px;
+}
+
 .iconesVirtudes {
     max-width: 90px;
     max-height: 90px;
+}
+
+@media (min-width: 768px){
+    .exemploIntPec {
+        max-width: 200px;
+    }
+    .resumoRodada {
+        min-width: 450px;
+    }
 }
 
 @media (min-width: 1440px) {
@@ -37,6 +50,9 @@
     .iconesVirtudes {
         max-width: 120px;
         max-height: 120px;
+    }
+    .exemploIntPec {
+        max-width: 275px;
     }
     .tabelaJogadores {
         font-size: 1.5rem;
