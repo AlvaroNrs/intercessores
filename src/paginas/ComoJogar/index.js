@@ -17,7 +17,7 @@ import temperanca from 'assets/Manual/Temperânça.png';
 import explicacaoRodada from 'assets/Manual/Resumo da Rodada2.png';
 import explicacaoRodada2 from 'assets/Manual/Resumo da Rodada.png';
 import exemploSanta from 'assets/Manual/Santa Catarina de Sena.png';
-import exemploPecado from 'assets/Manual/Ignorar os próprios escrúpulos.png';
+import exemploPecado from 'assets/Manual/Comer e Beber Gulosamente.png';
 import baseCartasVirtudesTeologais from "../../virtueCards.json";
 
 export default function ComoJogar() {
@@ -53,7 +53,7 @@ export default function ComoJogar() {
                                             </li>
                                         </ul>
                                         <section className="py-1 d-flex flex-column">
-                                            <h4 id="cartasIntercessor">1.1 - Cartas de Intercessores</h4>
+                                            <h4 id="cartasSanto">1.1 - Cartas de Intercessores</h4>
                                             <ParagrafoGrande tamanhoFonte={"fs-4"} corFonte={"fc-laranja"}>
                                                 Cada Carta  de Intercessor tem:
                                             </ParagrafoGrande>
@@ -62,10 +62,7 @@ export default function ComoJogar() {
                                                 1 - Nome do Intercessor –<TextoDestacadoCor corFonte={"fc-marrom"}> O nome do Santo ou Santa.</TextoDestacadoCor>
                                             </Paragrafo>
                                             <Paragrafo className="text-start" fonte={"fc-laranja"}>
-                                                2 - Pontos de Intercessão –<TextoDestacadoCor corFonte={"fc-marrom"}> Um número que aumenta os Pontos de Intercessão do grupo.</TextoDestacadoCor>
-                                            </Paragrafo>
-                                            <Paragrafo className="text-start" fonte={"fc-laranja"}>
-                                                3 - Virtudes do Intercessor –<TextoDestacadoCor corFonte={"fc-marrom"}> Símbolos dos quais cada símbolo representa uma das 4 Virtudes Cardeais:</TextoDestacadoCor>
+                                                2 - Virtude do Intercessor –<TextoDestacadoCor corFonte={"fc-marrom"}> Um Símbolos que representa uma das 4 Virtudes Cardeais:</TextoDestacadoCor>
                                                 <section className="d-flex flex-column flex-xxl-row  gap-3 fs-5 fc-marrom">
                                                     <section className="d-flex flex-row gap-2 align-items-center text-left">
                                                         <img className={styles.iconesVirtudes} src={justica} alt="Símbolo de Justiça" />
@@ -196,13 +193,13 @@ export default function ComoJogar() {
                                                     Colocar uma <TextoDestacadoCor corFonte={"fc-laranja"}>Carta de Intercessor</TextoDestacadoCor>da mão em jogo. Cartas de Intercessores jogados ficam em jogo até o fim da rodada.
                                                     <ul className="fs-5">
                                                         <li>Os Pontos de Intercessão da carta aumentam os Pontos de Intercessão do grupo. Os Pontos de Intercessão do grupo é o total da soma dos pontos de todas as cartas em jogo.
-                                                            Intercessores com um símbolo de Virtude igual ao da Fraqueza do Pecado enfrentado na rodada possuem 1 Ponto de Intercessão a mais do que o valor indicado na carta.</li>
+                                                        Santos com um símbolo de Virtude igual ao da Fraqueza do Pecado enfrentado na rodada possuem 1 Ponto de Intercessão a mais do que o valor indicado na carta.</li>
                                                     </ul>
                                                     <section className="d-flex flex-row text-center justify-content-center column-gap-3">
                                                         <img className={styles.exemploIntPec} src={exemploSanta} alt="Carta de Santa Catarina de Sena" />
                                                         <img className={styles.exemploIntPec} src={exemploPecado} alt="Carta de Pecado" />
                                                     </section>
-                                                    <Paragrafo>A carta de Santa Catarina de Sena possui o símbolo da Prudência, a Fraqueza de Ignorar os próprios Escrúpulos. Neste caso, o número de Pontos de Intercessão de Santa Catarina de Sena é 4 ao invés de 3.</Paragrafo>
+                                                    <Paragrafo>A carta de Santa Catarina de Sena possui o símbolo da Prudência, a Fraqueza de Comer e Beber Gulosamente. Neste caso, Santa Catarina de Sena gera 2 Pontos de Intercessão ao invés de 1.</Paragrafo>
                                                 </li>
                                                 <li>
                                                     Jogar uma carta de Virtude Teologal. O efeito descrito na carta acontece e depois ela é colocada no monte de descarte.
@@ -218,7 +215,7 @@ export default function ComoJogar() {
                                             Sempre que um jogador colocar um Intercessor da mão em jogo, os jogadores devem verificar se o total dos Pontos de Intercessão do grupo é igual ou maior ao Dificuldade do Pecado enfrentado.
                                             </Paragrafo>
                                             <Paragrafo className="text-start" fonte={"fc-marrom"}>
-                                            Em caso positivo, os jogadores vencem a rodada: as cartas em jogo e no monte de descarte são colocadas no monte de cartas de Intercessores e cada jogador recebe uma carta. Inicia-se então uma nova rodada.
+                                            Em caso positivo, os jogadores vencem a rodada: as cartas em jogo e no monte de descarte são embaralhadas e colocadas no fundo do monte de cartas de Santos. Inicia-se então uma nova rodada.
                                             </Paragrafo>
                                             <Paragrafo className="text-start" fonte={"fc-marrom"}>
                                             Se o valor da Dificuldade do Pecado não foi atingido, o jogador do turno descarta cartas da mão até ficar com no máximo 4. Ele passa a vez ao próximo jogador e assim o jogo segue, até o último. Depois da vez do último jogador, se o pecado não foi vencido, é a vez da carta de Pecado.
@@ -278,7 +275,7 @@ export default function ComoJogar() {
                                                 </ParagrafoGrande>
                                                 <ul className="py-3 fc-marrom">
                                                     <li>
-                                                        Quando algum jogador ficar sem cartas na mão
+                                                        Se todos os jogadores ficarem sem cartas na mão.
                                                     </li>
                                                     <li>
                                                         Quando um jogador compraria cartas, mas o monte de Cartas de Intercessores estiver vazio.

@@ -33,7 +33,7 @@ export default function SumarioDropdown() {
                         <ol className={styles.listaConteudoSumario}>
                             <li className="d-flex flex-column text-start pt-2 justify-content-start">
                                 <a className={styles.tituloSumario} href="#introEpecas">1 - Introdução e Peças</a>
-                                <a className={`${"d-flex"} ${styles.tituloSumario}`} href="#cartasIntercessor">1.1 -<p className="ps-1 fc-marrom">Cartas de Intercessores</p></a>
+                                <a className={`${"d-flex"} ${styles.tituloSumario}`} href="#cartasSanto">1.1 -<p className="ps-1 fc-marrom">Cartas de Santos</p></a>
                                 <a className={`${"d-flex"} ${styles.tituloSumario}`} href="#cartasPecado">1.2 -<p className="ps-1 fc-marrom">Cartas de Pecados</p></a>
                                 <a className={`${"d-flex"} ${styles.tituloSumario}`} href="#cartasVirtudesT">1.3 -<p className="ps-1 fc-marrom">Cartas de Virtudes Teologais</p></a>
                             </li>
