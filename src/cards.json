@@ -48,10 +48,10 @@
         "caminho":"/CartasSantos/Santa Gianna Beretta Molla.png"
     },
     {
-        "nome": "Santa Hidelgarda de Bingen",
+        "nome": "Santa Hildegarda de Bingen",
         "intercessao": 4,
         "virtudes":["Justica"],
-        "caminho":"/CartasSantos/Santa Hidelgarda de Bingen.png"
+        "caminho":"/CartasSantos/Santa Hildegarda de Bingen.png"
     },
     {
         "nome": "Santa Joana d'Arc",
@@ -112,6 +112,12 @@
         "intercessao": 5,
         "virtudes":["Temperanca"],
         "caminho":"/CartasSantos/Santa Teresinha.png"
+    },
+    {
+        "nome": "Santa Verônica",
+        "intercessao": 4,
+        "virtudes":["Temperanca"],
+        "caminho":"/CartasSantos/Santa Verônica.png"
     },
     {
         "nome": "Santa Agostinho",
@@ -198,16 +204,16 @@
         "caminho":"/CartasSantos/São Filipe Néri.png"
     },
     {
-        "nome": "São Filipe, Apóstolo",
+        "nome": "São Filipe",
         "intercessao": 4,
         "virtudes":["Prudencia"],
-        "caminho":"/CartasSantos/São Filipe, Apóstolo.png"
+        "caminho":"/CartasSantos/São Filipe.png"
     },
     {
         "nome": "São Francisco de Assis",
         "intercessao": 3,
         "virtudes":["Justica", "Temperanca"],
-        "caminho":"/CartasSantos/São Francisco.png"
+        "caminho":"/CartasSantos/São Francisco de Assis.png"
     },
     {
         "nome": "São João Batista",
@@ -222,10 +228,16 @@
         "caminho":"/CartasSantos/São João Evangelista.png"
     },
     {
-        "nome": "São José Sánchez del Río",
+        "nome": "São João Paulo II",
+        "intercessao": 4,
+        "virtudes":["Justica"],
+        "caminho":"/CartasSantos/São João Paulo II.png"
+    },
+    {
+        "nome": "São José Sánchez do Rio",
         "intercessao": 4,
         "virtudes":["Fortaleza"],
-        "caminho":"/CartasSantos/São José Sánchez del Río.png"
+        "caminho":"/CartasSantos/São José Sanchez do Rio.png"
     },
     {
         "nome": "São Josemaria Escrivá",
@@ -249,7 +261,7 @@
         "nome": "São Matias, Apóstolo",
         "intercessao": 3,
         "virtudes":["Fortaleza", "Prudencia"],
-        "caminho":"/CartasSantos/São Matias, Apóstolo.png"
+        "caminho":"/CartasSantos/São Matias Apóstolo.png"
     },
     {
         "nome": "São Maximiliano Maria Kolbe",
@@ -276,27 +288,27 @@
         "caminho":"/CartasSantos/São Pedro.png"
     },
     {
-        "nome": "São Simão, Apóstolo",
+        "nome": "São Simão Apóstolo",
         "intercessao": 4,
         "virtudes":["Fortaleza"],
-        "caminho":"/CartasSantos/São Simão, Apóstolo.png"
+        "caminho":"/CartasSantos/São Simão Apóstolo.png"
     },
     {
-        "nome": "São Tiago Maior",
+        "nome": "São Tiago Maior Apóstolo",
         "intercessao": 4,
         "virtudes":["Temperanca"],
-        "caminho":"/CartasSantos/São Tiago Maior.png"
+        "caminho":"/CartasSantos/São Tiago Maior Apóstolo.png"
     },
     {
-        "nome": "São Tiago Menor",
+        "nome": "São Tiago Menor Apóstolo",
         "intercessao": 3,
         "virtudes":["Fortaleza", "Prudencia"],
-        "caminho":"/CartasSantos/São Tiago Menor.png"
+        "caminho":"/CartasSantos/São Tiago Menor Apóstolo.png"
     },
     {
-        "nome": "São Tomé, Apóstolo",
+        "nome": "São Tomé Apóstolo",
         "intercessao": 4,
         "virtudes":["Fortaleza", "Temperanca"],
-        "caminho":"/CartasSantos/São Tomé, Apóstolo.png"
+        "caminho":"/CartasSantos/São Tomé Apóstolo.png"
     }
 ]
