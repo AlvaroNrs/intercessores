@@ -16,13 +16,13 @@ export default function Menu() {
                             <button className={`${"navbar-toggler"} ${styles.btnMenuHamburguer}`} type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                                 <i className="fa-solid fa-bars fc-creme"></i>
                             </button>
-                            <Link className="navbar-brand d-flex flex-row gap-3" to="/">
+                            <Link className="navbar-brand d-flex flex-row gap-3" to="/" key="home">
                                 <img src={logoJogoSimples} alt="Logo do Jogo Intercessores" className={`${"align-text-top"} ${styles.logoImg}`} />
                                 <h1>Intercessores</h1>
                             </Link>
                         </section>
                         <section className="d-none d-md-flex flex-column w-100">
-                            <Link to="/">
+                            <Link to="/" key="home2">
                                 <img src={logoJogoCompleto} alt="Logo do Jogo Intercessores" className={`${"align-text-top"} ${styles.logoImg}`} />
                             </Link>
                             <section className="pt-3 d-grid text-center">

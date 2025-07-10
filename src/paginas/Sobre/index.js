@@ -1,6 +1,6 @@
 import AreaConteudo from 'paginas/AreaConteudo';
 import Paragrafo from 'componentes/Paragrafo';
-import imgCriador from 'assets/Manual/Ult_Yo_26_06_2022.png';
+import imgCriador from 'assets/Manual/Cut.png';
 import styles from './Sobre.module.css';
 import BotaoLink from 'componentes/BotaoLink';
 
@@ -15,7 +15,7 @@ export default function Sobre() {
                         Olá! Meu nome é Álvaro Novais. Formado em Design de Games pela Belas Artes em São Paulo e estudante de Análise e Desenvolvimento de Sistemas na FIAP.
                     </Paragrafo>
                     <Paragrafo fonte={"fc-marrom"}>
-                        Também sou catequista e cerimoniario na Paróquia São Francisco de Assis, em Carapicuíba -SP.
+                        Também sou catequista na Paróquia São Francisco de Assis, em Carapicuíba -SP.
                     </Paragrafo>
                 </section>
                 <section className="d-flex flex-column py-3">

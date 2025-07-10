@@ -1,3 +1,7 @@
+section {
+    min-width: 12rem;
+}
+
 .btnInteracao {
     border: 2px solid var(--marrom);
 }
