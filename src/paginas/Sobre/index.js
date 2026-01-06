@@ -12,10 +12,10 @@ export default function Sobre() {
                 <img className={styles.fotoCriador} src={imgCriador} alt="Foto do Álvaro em cima de um telhado tocando violino"></img>
                 <section className="text-start">
                     <Paragrafo fonte={"fc-marrom"}>
-                        Olá! Meu nome é Álvaro Novais. Formado em Design de Games pela Belas Artes em São Paulo e estudante de Análise e Desenvolvimento de Sistemas na FIAP.
+                        Olá! Meu nome é Álvaro Novais. Formado em Design de Games pela Belas Artes em São Paulo e em Análise e Desenvolvimento de Sistemas na FIAP.
                     </Paragrafo>
                     <Paragrafo fonte={"fc-marrom"}>
-                        Também sou catequista na Paróquia São Francisco de Assis, em Carapicuíba -SP.
+                        Também sou catequista e ministro extraordinário da sagrada comunhão na Paróquia São Francisco de Assis, em Carapicuíba -SP.
                     </Paragrafo>
                 </section>
                 <section className="d-flex flex-column py-3">
